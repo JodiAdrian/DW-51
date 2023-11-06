@@ -1,0 +1,36 @@
+/* CARD INDEX */
+
+.index-div {
+    margin: 100px auto; 
+    width: 340px; 
+    border: 1px solid #3d3d3d; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    box-shadow: 0 0 30px #3d3d3d"
+}
+
+.h1-index {
+    text-align: center;
+    margin: 0; 
+    margin-top: 25px
+}
+
+.p1-index {
+    text-align: center;
+    margin: 0; 
+    margin-bottom: 25px;
+}
+
+.table-div {
+    border: 1px solid #000; border-collapse: collapse; 
+    width: 100%;
+}
+
+.th-index {
+    border: 1px solid black
+}
+
+.td-index {
+    border: 1px solid black; text-align: center;
+}

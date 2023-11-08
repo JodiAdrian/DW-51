@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Contact Me</title>
+    </head>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./assets/image/daun.png" alt="logo">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="./contact-me.html">Kontak Saya</a>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- FORM -->
+    <body>
+        <form action="">
+            <div>
+                <label for="nama">Name:</label><br>
+                <input type="text" id="nama">
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div>
+
+            <div>
+                <label for="phone">Nomor Hanphone:</label><br>
+                <input type="text" id="phone">
+            </div>
+
+            <div>
+                <label for="pilih">Pilih Dulu</label><br>
+                <select id="pilih">
+                    <option></option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Fullstack Develope">Fullstack Develope</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan"></textarea>
+            </div>
+
+            <div>
+                <br><button class="button" onclick="getData()"> Kirim </button>
+            </div>
+        </form>
+        <!-- END FORM -->
+        <script src="./assets/js/contact.js"></script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Page</title>
+        <link rel="stylesheet" href="./assets/css/blog-detail.css">
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="./assets/image/daun.png" alt="logo">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="./contact-me.html">Kontak Saya</a>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div>
+            <h1 class="h1-project">Tambah Projek Saya</h1>
+        </div>
+
+        <form onsubmit="submitData(event)" autocomplete="off">
+            <div>
+                <label for="project_name">Project Name:</label><br>
+                <input class="form-input" type="text" id="project_name" name="project_name">
+            </div>
+
+            <div class="form-container">
+                <div class="div-start">
+                    <label for="start_date">Start Date:</label><br>
+                    <input class="form-input" type="date" id="start_date" name="start_date">
+                </div>
+                <div>
+                    <label for="end_date">End Date</label><br>
+                    <input class="form-input" type="date" id="end_date" name="end_date">
+                </div>
+            </div>
+
+            <div>
+                <label for="description">Description:</label><br>
+                <textarea class="form-input" id="description" name="description"></textarea>
+            </div>
+
+            <!-- <div> -->
+            <fieldset>
+                <legend>Technologies</legend>
+                <div class="checkbox">
+                    <input type="checkbox" id="nodejs" name="technologies" value="Node Js">
+                    <label for="nodejs">Node JS</label><br>
+                    <input type="checkbox" id="nextjs" name="technologies" value="Next Js">
+                    <label for="nextjs">Next Js</label><br>
+                </div>
+
+                <div class="checkbox padding-1">
+                    <input type="checkbox" id="reactjs" name="technologies" value="React Js">
+                    <label for="reactjs">React Js</label><br>
+                    <input type="checkbox" id="typescript" name="technologies" value="Typescript">
+                    <label for="typescript">Typescript</label><br>
+                </div>
+            </fieldset>
+            <!-- </div> -->
+
+            <div>
+                <input type="file" id="input-blog-image" accept="image/*">
+            </div>
+
+            <div class="div-submit">
+                <br>
+                <button class="button" type="submit">
+                    Kirim
+                </button>
+            </div>
+        </form>
+
+        <hr class="line"/>
+        <div>
+            <h1 class="h1-project">Projek Saya</h1>
+        </div>
+
+        <div class="div-card-item" id="contents">
+            <div class="div-card">
+                <img src="./assets/image/team7.jpg" alt="Rian" class="img-card"/>
+                <h1 class="h1-card">
+                    Project Name
+                </h1>
+                <p class="p-card">
+                    Start - End</p>
+
+                <table class="table-card">
+                    <tr>
+                        <th class="th-card">Deskripsi</th>
+                        <th class="th-card">Technology</th>
+                    </tr>
+                    <tr>
+                        <td class="td-card text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla debitis,
+                            laudantium dolorem magni consequatur facere unde assumenda ipsam officiis nobis.
+                            Eaque corrupti at eligendi itaque aliquam soluta? Itaque, sed!</td>
+                        <td class="td-card">Node JS</td>
+                    </tr>
+                </table>
+                <div class="card-actions">
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Hapus</button>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/blog.js"></script>
+    </body>
+</html>

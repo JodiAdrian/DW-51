@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <title>Contact Me</title>
+    </head>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./assets/image/daun.png" alt="logo">
+                <li>
+                    <a class="nav-item" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="./testimonial.html">Testimonials</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a class="nav-item" href="./contact-me.html">Kontak Saya</a>
+        </div>
+
+        <div class="nav-right" id="barsmenu">
+            <button class="humberger-button" onclick="openhumberger()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="humberger-container" id="humberger-container">
+        <a href="./index.html">Home</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact-me.html" class="berger-active">Kontak</a>
+        <a href="./testimonial.html">Testimonials</a>
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- FORM -->
+    <body>
+        <div class="contact">
+            <h1>Hubungi Saya</h1>
+        </div>
+
+        <form action="">
+            <div>
+                <label for="nama">Name:</label><br>
+                <input type="text" id="nama">
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div>
+
+            <div>
+                <label for="phone">Nomor Hanphone:</label><br>
+                <input type="text" id="phone">
+            </div>
+
+            <div>
+                <label for="pilih">Pilih Dulu</label><br>
+                <select id="pilih">
+                    <option></option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Fullstack Develope">Fullstack Develope</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan"></textarea>
+            </div>
+
+            <div>
+                <br>
+                <button class="button" onclick="getData()">
+                    Kirim
+                </button>
+            </div>
+        </form>
+        <!-- END FORM -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/navbar.js"></script>
+    </body>
+</html>

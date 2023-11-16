@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <title>Home</title>
+    </head>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <img src="./assets/image/daun.png" alt="logo">
+                <li>
+                    <a class="nav-item" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="nav-item" href="./testimonial.html">Testimonials</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a class="nav-item" href="./contact-me.html">Contact Me</a>
+        </div>
+
+        <div class="nav-right" id="barsmenu">
+            <button class="humberger-button" onclick="openhumberger()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="humberger-container" id="humberger-container">
+        <a href="./index.html" class="berger-active">Home</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact-me.html">Contact Me</a>
+        <a href="./testimonial.html">Testimonials</a>
+    </div>
+    <!-- END NAVBAR -->
+
+    <!-- BODY -->
+    <body>
+        <div class="profile-card">
+            <div class="left-column">
+                <h2>Hi Semuanya</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, quae
+                    temporibus ratione necessitatibus sapiente sequi vero maxime quos repudiandae
+                    tenetur numquam, eius nam? Possimus atque voluptatibus deserunt consectetur
+                    quas. Dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                    sit velit asperiores corporis quisquam maxime dolores, nesciunt deleniti!
+                    Dolores beatae officia fugit. Ex dolore expedita nemo cupiditate ipsam deserunt
+                    ipsa!</p>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/image/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/image/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/image/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="right-column">
+                    <img src="./assets/image/giias.jpeg" alt="Foto Profil">
+                    <h2>Jodi Adrian</h2>
+                    <p>Saya seorang Full Stack Developer</p>
+                </div>
+            </div>
+        </div>
+        <!-- END index -->
+        <script src="./assets/js/navbar.js"></script>
+    </body>
+</html>

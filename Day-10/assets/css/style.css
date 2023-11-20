@@ -1,0 +1,392 @@
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding: 10px 20px 30px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-left img {
+    margin-right: 50px;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.nav-left img {
+    margin-right: 50px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left a :hover {
+    color: #b4db6b;
+}
+
+.nav-right :hover {
+    color: whitesmoke;
+    background-color: #8c9170;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav-right a {
+    font: bold;
+    background-color: #bfb586;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* HUMBERGER-NAVBAR-CONTAINER */
+
+#barsmenu {
+    display: none;
+}
+
+.humberger-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 25px;
+  }
+
+.humberger-container {
+    display: none;
+}
+
+.humberger-container a {
+    background-color: #8c9170;
+    color: white;
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+}
+
+.humberger-container .berger-active {
+    background-color: #bfb586;
+}
+
+@media only screen and (max-width: 500px) {
+   .nav-item {
+        display: none;
+    }
+    #barsmenu {
+        display: block;
+    }
+  }
+
+/* INDEX - PROFIL */
+
+.profile-card {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-shadow: 8px 8px 35px 3px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 8px 8px 35px 3px rgba(0,0,0,0.73);
+    -moz-box-shadow: 8px 8px 35px 3px rgba(0,0,0,0.73);
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.left-column p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    /* Ubah ukuran ikon sesuai kebutuhan Anda */
+    height: 40px;
+    /* Ubah ukuran ikon sesuai kebutuhan Anda */
+}
+
+.right-column {
+    flex: 1;
+    text-align: center;
+}
+
+.right-column img {
+    max-width: 200%;
+    border-radius: 5%;
+}
+
+.right-column h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.right-column p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card {
+    width: 320px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 8px 8px 40px -4px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 8px 8px 40px -4px rgba(0,0,0,0.71);
+    -moz-box-shadow: 8px 8px 40px -4px rgba(0,0,0,0.71);
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .left-column {
+        text-align: justify;
+    }
+    .right-column {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 438px) {
+    .card {
+        width: fit-content;
+    }
+
+    .right-column img {
+        max-width: 100%;
+    }
+}
+
+/* FORM CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+form {
+    width: 350px;
+    margin: 50px auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.button {
+    background-color: beige;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 396px) {
+    form input, select, textarea {
+        width: 95%;
+
+    }
+}
+/* END CONTACT */
+
+/* BLOG PAGE*/
+
+.h1-project {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}   
+
+.width-50 {
+    width: 50%;
+}
+
+.div-start {
+    margin-right: 40px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+.checkbox-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+input[type="checkbox"] {
+    transform: scale(1.0); /* Adjust the scale factor as needed */
+    margin-right: 50px; /* Add some space between the checkbox and label */
+  }
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #6e6d40;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+/* Blog card */
+
+.containercrd {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    margin-top: 10px;
+}
+
+.project-card {
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+.project-details {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: black;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card {
+        display: grid;
+    }
+    .project-details {
+        text-align: center;
+    }
+    .project-card img {
+        width: 100%;
+    }
+    .action-buttons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* END BLOG PAGE */
